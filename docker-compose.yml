@@ -1,0 +1,54 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: deus-postgres
+    environment:
+      POSTGRES_DB: deus_restaurant_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 26706
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - deus-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d deus_restaurant_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./qr-ordering-system
+    container_name: deus-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://deus-postgres:5432/deus_restaurant_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 26706
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      APP_JWT_SECRET: ChangeThisSecretInProduction_AtLeast_32_Chars_Long
+      APP_JWT_EXPIRATION_MS: 86400000
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - deus-network
+
+  frontend:
+    build:
+      context: ./restaurant-qr-ordering-system-frontend
+    container_name: deus-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - deus-network
+
+volumes:
+  postgres_data:
+
+networks:
+  deus-network:
+    driver: bridge

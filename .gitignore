@@ -1,0 +1,24 @@
+# Backend
+qr-ordering-system/target/
+qr-ordering-system/.mvn/wrapper/maven-wrapper.jar
+qr-ordering-system/.idea/
+qr-ordering-system/*.iml
+qr-ordering-system/*.ipr
+qr-ordering-system/*.iws
+qr-ordering-system/.vscode/
+qr-ordering-system/startup_log.txt
+qr-ordering-system/diagnose.py
+
+# Frontend
+restaurant-qr-ordering-system-frontend/node_modules/
+restaurant-qr-ordering-system-frontend/dist/
+restaurant-qr-ordering-system-frontend/.vscode/
+restaurant-qr-ordering-system-frontend/vite.log
+
+# Prototype
+Mobile QR Restaurant Ordering System prototype code/node_modules/
+Mobile QR Restaurant Ordering System prototype code/dist/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+{
+  "name": "Deus Restaurant QR Ordering",
+  "short_name": "Deus QR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8F0",
+  "theme_color": "#8B4513",
+  "description": "Mobile QR ordering for Deus Restaurant",
+  "icons": []
+}
