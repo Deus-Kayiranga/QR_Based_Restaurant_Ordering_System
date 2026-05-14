@@ -1,5 +1,5 @@
 // Mock Data for QR Restaurant Ordering System
-// La Ta Bhore - Kigali, Rwanda
+// Azzurri Rwanda - Kigali, Rwanda
 
 import { expandedMenuItems } from './expanded-menu';
 
@@ -142,7 +142,7 @@ export const mockUsers: User[] = [
     user_id: 1,
     first_name: 'Emmanuel',
     last_name: 'Mugisha',
-    email: 'emmanuel@latabhore.rw',
+    email: 'emmanuel@azzurrirwanda.rw',
     phone_number: '+250788123456',
     role: 'super_admin',
     is_active: true,
@@ -153,7 +153,7 @@ export const mockUsers: User[] = [
     user_id: 2,
     first_name: 'Aline',
     last_name: 'Uwase',
-    email: 'aline@latabhore.rw',
+    email: 'aline@azzurrirwanda.rw',
     phone_number: '+250788234567',
     role: 'manager',
     is_active: true,
@@ -164,7 +164,7 @@ export const mockUsers: User[] = [
     user_id: 3,
     first_name: 'Jean Paul',
     last_name: 'Nkurunziza',
-    email: 'jeanpaul@latabhore.rw',
+    email: 'jeanpaul@azzurrirwanda.rw',
     phone_number: '+250788345678',
     role: 'waiter',
     is_active: true,
@@ -175,7 +175,7 @@ export const mockUsers: User[] = [
     user_id: 4,
     first_name: 'Clarisse',
     last_name: 'Imanishimwe',
-    email: 'clarisse@latabhore.rw',
+    email: 'clarisse@azzurrirwanda.rw',
     phone_number: '+250788456789',
     role: 'kitchen_staff',
     is_active: true,
@@ -186,7 +186,7 @@ export const mockUsers: User[] = [
     user_id: 5,
     first_name: 'Patrick',
     last_name: 'Habimana',
-    email: 'patrick@latabhore.rw',
+    email: 'patrick@azzurrirwanda.rw',
     phone_number: '+250788567890',
     role: 'cashier',
     is_active: true,
@@ -197,7 +197,7 @@ export const mockUsers: User[] = [
     user_id: 6,
     first_name: 'Marie',
     last_name: 'Keza',
-    email: 'marie@latabhore.rw',
+    email: 'marie@azzurrirwanda.rw',
     phone_number: '+250788678901',
     role: 'waiter',
     is_active: true,
@@ -208,7 +208,7 @@ export const mockUsers: User[] = [
     user_id: 7,
     first_name: 'David',
     last_name: 'Nsabimana',
-    email: 'david@latabhore.rw',
+    email: 'david@azzurrirwanda.rw',
     phone_number: '+250788789012',
     role: 'kitchen_staff',
     is_active: false,
@@ -413,5 +413,5 @@ export const generateQRToken = (): string => {
 };
 
 export const getQRCodeURL = (table: RestaurantTable): string => {
-  return `https://la-ta-bhore.com/order?table=${table.table_number}&token=${table.qr_code_token}`;
+  return `https://azzurrirwanda.com/order?table=${table.table_number}&token=${table.qr_code_token}`;
 };

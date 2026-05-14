@@ -87,7 +87,7 @@ export function LoginPage({ onLogin, onBack }: LoginPageProps) {
                 <Coffee className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-white text-xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>La Ta Bhore</h1>
+                <h1 className="text-white text-xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>Azzurri Rwanda</h1>
                 <p className="text-[#C4A882] text-xs">Kigali, Rwanda</p>
               </div>
             </div>
@@ -99,7 +99,7 @@ export function LoginPage({ onLogin, onBack }: LoginPageProps) {
               Staff<br />Management<br />Portal
             </h2>
             <p className="text-[#C4A882] mb-8 leading-relaxed">
-              Secure access to the La Ta Bhore Restaurant Operations System. Choose your role and sign in.
+              Secure access to the Azzurri Rwanda Restaurant Operations System. Choose your role and sign in.
             </p>
 
             {/* Roles preview */}
@@ -123,8 +123,8 @@ export function LoginPage({ onLogin, onBack }: LoginPageProps) {
 
           {/* Footer */}
           <div>
-            <p className="text-[#C4A882] text-xs">La Ta Bhore Restaurant System</p>
-            <p className="text-[#8B5E3A] text-xs">La Ta Bhore Restaurant System v2.0</p>
+            <p className="text-[#C4A882] text-xs">Azzurri Rwanda Restaurant System</p>
+            <p className="text-[#8B5E3A] text-xs">Azzurri Rwanda Restaurant System v2.0</p>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ export function LoginPage({ onLogin, onBack }: LoginPageProps) {
                   <Coffee className="w-5 h-5 text-white" />
                 </div>
               </div>
-              <h1 className="text-3xl font-bold text-[#2C1810]" style={{ fontFamily: 'Playfair Display, serif' }}>La Ta Bhore</h1>
+              <h1 className="text-3xl font-bold text-[#2C1810]" style={{ fontFamily: 'Playfair Display, serif' }}>Azzurri Rwanda</h1>
               <p className="text-[#8B7355] text-sm mt-1">Restaurant Management System</p>
             </div>
 
