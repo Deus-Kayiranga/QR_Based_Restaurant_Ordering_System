@@ -46,6 +46,15 @@ services:
     networks:
       - deus-network
 
+  prototype:
+    build:
+      context: ./Mobile QR Restaurant Ordering System prototype code
+    container_name: qr-prototype
+    ports:
+      - "3000:80"
+    networks:
+      - deus-network
+
 volumes:
   postgres_data:
 
